@@ -9,7 +9,7 @@ public class CharacterScript : MonoBehaviour
     Factory Pattern:
 
         Character Script uses inheritance to propogate common functions down to
-    child scripts. Both the Player and the Eneimes Move and can Die. So why
+    child scripts. Both the player and the enemies can move and can die. So why
     program these functions multiple times when you can create a common parent
     script that shares these functions between objects.
 
@@ -43,7 +43,7 @@ public class CharacterScript : MonoBehaviour
         }
     }
 
-    // 'virtual' methods are ones child scripts can alter later using an 'override'
+    // 'virtual' methods are one's child scripts can alter later using an 'override'
     public virtual void Die()
     {
         // destroy self
